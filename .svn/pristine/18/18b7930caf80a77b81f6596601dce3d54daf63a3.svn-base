@@ -1,0 +1,181 @@
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;}
+
+body {
+    background-color: #e2e2e2;
+    color: #333;
+    font-size: 0.9em;
+    padding: 7rem 0.5rem 1rem;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden; }
+
+.fine-print {
+    color: #c1c1c1;
+    font-size: 8px; }
+
+.center-text {
+    text-align: center; }
+
+#wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+
+/**
+ * Heading
+ */
+.header {
+    background-color: #4d9ef2;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /*transition: background-color 0.5s;*/ }
+
+.header-title {
+    font-weight: 300;
+    margin: 0; }
+
+.header-subtitle {
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.05rem; }
+.terms-block {
+    padding: 0.5em 0;
+    text-align: center;
+    font-weight: 600;
+    margin: 0; }
+.renews {
+    margin: 40px 0 0 0;
+}
+
+.fine-print.contact-support {
+    font-size: 0.8rem; }
+
+/**
+ * Fields
+ */
+.form-body {
+    background-color: #fff;
+    padding: 0 1.5rem 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+
+.field {
+    margin-bottom: 1rem; }
+
+label,
+input {
+    display: block; }
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0; }
+
+input {
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    border: 1px solid #c1c1c1;
+    border-radius: 3px; }
+
+::-webkit-input-placeholder {
+    color: #c1c1c1; }
+
+::-moz-placeholder {
+    color: #c1c1c1; }
+
+:-ms-input-placeholder {
+    color: #c1c1c1; }
+
+/* Two Fields on One line */
+.split-field + .field {
+    clear: both; }
+
+/* Do not join the two fields together */
+.has-expiry .col-1 input {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: 1px solid #c1c1c1; }
+
+.has-expiry .col-2 input {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+
+.expiry input {
+    width: 40%;
+    display: inline-block; }
+
+.expiry-sep {
+    margin: 0.1rem; }
+
+.col-1 input.nomask, .col-2 input.nomask{
+    border-radius: 3px;
+    border: 1px solid #c1c1c1;
+}
+
+.input-error input.nomask {
+    border-color: #f24d4d;
+}
+
+/* Fields with "Help" Icons */
+.input-with-icon {
+    position: relative; }
+.input-with-icon input {
+    padding-right: 2rem; }
+
+input[name="xsale"] {
+    display: inline;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Form Submit Button */
+.btn-pay {
+    background-color: #4d9ef2;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 1.25rem 0 -1.5rem;
+    padding: 0.75rem;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    display: block;
+    /*transition: background-color 0.5s;*/ }
+
+/**
+ * Sending / Submitting
+ */
+.header {
+    background-color: #4d9ef2;
+    /*transition: background-color 0.5s;*/ }
+
+.btn-pay {
+    background-color: #7db8f5;
+    /*transition: background-color 0.5s;*/ }
+
+/* Larger Tablet and Desktop */
+/* Ex: iPad or Galaxy Tab 10 */
+@media (min-width: 768px) {
+    #wrapper {
+        max-width: 480px;
+        position: relative; }
+    /* Full-height looks weird on desktop */
+    .success {
+        max-height: 400px; }
+    .fine-print {
+        font-size: 10px; }
+   }
