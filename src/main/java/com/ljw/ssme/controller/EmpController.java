@@ -22,12 +22,12 @@ public class EmpController {
 	@RequestMapping("list")
 	//@ResponseBody
 	public String getEmpList(HttpServletRequest request){
-		List<Emp> list = empService.getEmpList();
+		/*List<Emp> list = empService.getEmpList();
 		for(Emp emp : list){
 			System.out.println(emp.getEname());
 		}
-		request.setAttribute("empList", list);
-		return "/orders/list";
+		request.setAttribute("empList", list);*/
+		return "/test";
 	}
 	
 }
