@@ -60,5 +60,6 @@
 </script>
 	<div id="right" style="margin: 20px auto 0;">
 		<h1>mytest</h1>
+		<h3>这是我的一个测试</h3>
 	</div>
 <%@ include file="../public/bottom.jsp" %>
