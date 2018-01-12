@@ -27,6 +27,7 @@ public class EmpController {
 			System.out.println(emp.getEname());
 		}
 		request.setAttribute("empList", list);*/
+		request.setAttribute("name", "jack");
 		return "/test";
 	}
 	
